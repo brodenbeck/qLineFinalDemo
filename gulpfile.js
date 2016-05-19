@@ -1,3 +1,4 @@
+// make sure to run npm install when pulling from GitHub
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var browserSync = require('browser-sync').create;
