@@ -1,0 +1,26 @@
+{
+  "name": "qline-project",
+  "version": "0.0.1",
+  "description": "shows users locations to visit based on qline stop and user interests",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brodenbeck/qLineFinalDemo.git"
+  },
+  "author": "britta rodenbeck, perry brown, alexis marien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brodenbeck/qLineFinalDemo/issues"
+  },
+  "homepage": "https://github.com/brodenbeck/qLineFinalDemo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.2"
+  }
+}
