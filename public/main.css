@@ -1,5 +1,8 @@
+.heading {
+	display: inline-block;
+}
 
-
-#mapid { 
-	height: 180px; 
+footer {
+	position: absolute;
+	bottom: 0px;
 }
