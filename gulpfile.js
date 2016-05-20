@@ -1,21 +1,23 @@
-// make sure to run npm install when pulling from GitHub
 var gulp = require('gulp');
+var browserSync = require("browser-sync").create();
 var jshint = require('gulp-jshint');
-var browserSync = require('browser-sync').create;
 
-gulp.task('jshint', function() {
-	return gulp.src(['./public/controllers/*.js', './public/script.js'])
+
+gulp.task('default', ['browser-sync']);
+
+gulp.task('lint', function() {
+	return gulp.src(['public/**/*.js'])
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
 });
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', ['lint'], function() {
 	    browserSync.init({
 	        server: {
-	            baseDir: "./"
+	            baseDir: "./public"
 	        }
 
 	    });
-	gulp.watch(["*.html","*.css","*.js", "*.styl"])
-		.on('change',browserSync.reload);
+	gulp.watch(["public/**/*.html","public/**/*.css","public/**/*.js"])
+		.on('change', browserSync.reload);
 	});	
