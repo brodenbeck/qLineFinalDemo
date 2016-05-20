@@ -1,12 +1,32 @@
 <!-- skeleton with ng-views -->
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-<p>HI!</p>
+	<head>
+		<title>QtoDO</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+		<script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="controllers/mainController.js"></script>
+		<script type="text/javascript" src="controllers/railController.js"></script>
+		<script type="text/javascript" src="controllers/contactController.js"></script>
+		<script type="text/javascript" src="server.js"></script>
+	</head>
 
+	<body>
+		<header>
+			<img class="heading" src="http://placekitten.com/200/200">
+			<div class="heading">	
+				<h1>QtoDO</h1>
+				<h2>Having fun on the M1</h2>
+			</div><!-- ends headings div -->
+		</header>
 
-</body>
+		<ng-view></ng-view>
+
+		<footer>
+			<p>This will be a footer.</p>
+		</footer>
+
+	</body>
 </html>
