@@ -1,1 +1,5 @@
-// controller for rail image and venues
+angular.module('mapModule')
+	   .controller('railController', function($scope){
+
+
+	   });

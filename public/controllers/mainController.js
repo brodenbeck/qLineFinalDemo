@@ -1,1 +1,5 @@
-// controller for interests
+angular.module('mapModule')
+	   .controller('mainController', function($scope){
+
+
+	   });
