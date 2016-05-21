@@ -2,38 +2,38 @@
 <html>
 	<head>
 		<title>QtoDO</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<script type="text/javascript" src="../angular/angular.min.js"></script>
-	<script type="text/javascript" src="../angular-route/angular-route.min.js"></script>
-	<script src="script.js"></script>
-<!-- 	<script src="server.js"></script> -->
-	<script src="controllers/contactController.js"></script>
-	<script src="controllers/mainController.js"></script>
-	<script src="controllers/railController.js"></script>
-	<script src="controllers/errorController.js"></script>	
-</head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript" src="../angular/angular.min.js"></script>
+		<script type="text/javascript" src="../angular-route/angular-route.min.js"></script>
+		<script src="script.js"></script>
+		<script src="service.js"></script>
+		<script src="controllers/contactController.js"></script>
+		<script src="controllers/mainController.js"></script>
+		<script src="controllers/railController.js"></script>
+		<script src="controllers/errorController.js"></script>	
+	</head>
 
-<body ng-app="mapModule">
-	<header>
-		<img class="heading" src="http://placekitten.com/200/200">
-		<div class="heading">	
-			<h1>QtoDO</h1>
-			<h2>Having fun on the M1</h2>
-		</div><!-- ends headings div -->
-	</header>
-    <nav>
-		<p>Test Nav</p>
-			<a href="#/">Home</a>
-			<a href="#/map">Map</a>
-			<a href="#/aboutus">Contact</a>
-			<a href="#/error">Error</a>
-	</nav>	
+	<body ng-app="mapModule">
+		<header>
+			<img class="heading" src="http://placekitten.com/200/200">
+			<div class="heading">	
+				<h1>QtoDO</h1>
+				<h2>Having fun on the M1</h2>
+			</div><!-- ends headings div -->
+		</header>
+	    <nav>
+			<p>Test Nav</p>
+				<a href="#/">Home</a>
+				<a href="#/map">Map</a>
+				<a href="#/contact">Contact</a>
+				<a href="#/error">Error</a>
+		</nav>	
 
-	<ng-view =""></ng-view>
+		<ng-view></ng-view>
 
-	<footer>
-		<p>This will be a footer.</p>
-	</footer>
+		<footer>
+			<p>This will be a footer.</p>
+		</footer>
 
-</body>
+	</body>
 </html>

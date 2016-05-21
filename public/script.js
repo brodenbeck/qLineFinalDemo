@@ -11,7 +11,7 @@ angular.module('mapModule', ['ngRoute'])
 	   	 			controller: 'railController',
 	   	 			templateUrl: 'partials/map.html'
 	   	 		})
-	   	 		.when('/aboutus',
+	   	 		.when('/contact',
 	   	 		{
 	   	 			controller: 'contactController',
 	   	 			templateUrl: 'partials/contact.html'
