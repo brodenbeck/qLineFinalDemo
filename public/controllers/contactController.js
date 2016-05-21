@@ -1,5 +1,5 @@
 angular.module('mapModule')
-	   .controller('contactController', function($scope){
+	.controller('contactController', function($scope){
 
 
-	   });
+	});
