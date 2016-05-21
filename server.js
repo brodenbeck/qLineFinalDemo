@@ -8,10 +8,21 @@ var yelp = new Yelp({
 	token_secret: 'QSCq0JQRC0fEQIOj3M9hn-8czMc',
 });
 
+var artsLocations = [];
+
 // See http://www.yelp.com/developers/documentation/v2/search_api
-yelp.search({ term: 'food', location: "1214 Griswold Street Detroit MI", radius_filter:200})
+yelp.search({ category_filter: 'arts', location: "777 Woodward Avenue, Detroit MI", radius_filter: 200 })
 	.then(function (data) {
-		console.log(data.businesses[0].name);
+		data.businesses.forEach(function(el) {
+			var instance = {};
+			instance.name = el.name;
+			instance.address = el.location.address[0];
+			instance.rating = el.rating;
+			instance.phone = el.phone;
+			instance.url = el.url;
+			artsLocations.push(instance);
+		})
+		console.log(artsLocations);
 	})
 	.catch(function (err) {
 		console.error(err);
