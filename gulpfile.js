@@ -12,12 +12,13 @@ gulp.task('lint', function() {
 });
 
 gulp.task('browser-sync', ['lint'], function() {
-	    browserSync.init({
-	        server: {
-	            baseDir: "./public"
-	        }
+    browserSync.init({
+        server: {
+            baseDir: "./public"
+        }
 
-	    });
+    });
+    
 	gulp.watch(["public/**/*.html","public/**/*.css","public/**/*.js"])
 		.on('change', browserSync.reload);
-	});	
+});	

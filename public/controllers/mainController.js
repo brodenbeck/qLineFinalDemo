@@ -1,5 +1,4 @@
 angular.module('mapModule')
-	   .controller('mainController', function($scope){
+	.controller('mainController', function($scope){
 
-
-	   });
+	});
