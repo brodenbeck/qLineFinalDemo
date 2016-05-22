@@ -24,11 +24,8 @@
     "jshint": "^2.9.2"
   },
   "dependencies": {
-<<<<<<< HEAD
+
     "angular-route": "^1.4.9",
     "yelp": "^1.0.1"
-=======
-    "yelp": "^1.0.1"
-    "angular-route": "^1.4.9"
   }
 }
