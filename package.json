@@ -24,6 +24,7 @@
     "jshint": "^2.9.2"
   },
   "dependencies": {
-    "angular-route": "^1.4.9"
+    "angular-route": "^1.4.9",
+    "yelp": "^1.0.1"
   }
 }
