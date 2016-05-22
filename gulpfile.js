@@ -6,7 +6,7 @@ var jshint = require('gulp-jshint');
 gulp.task('default', ['browser-sync']);
 
 gulp.task('lint', function() {
-	return gulp.src(['controllers/**/*.js', 'script.js','server.js'])
+	return gulp.src(['public/**/*.js'])
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
 });
