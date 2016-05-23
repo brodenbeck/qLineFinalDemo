@@ -7,9 +7,6 @@ gulp.task('default', ['browser-sync']);
 
 gulp.task('lint', function() {
 	return gulp.src(['controllers/**/*.js',
-					 'partials/**/*.js',
-					 'styles/**/*.js',
-					 'gulpfile.js',
 					 'script.js',
 					 'server.js',
 					 'service.js'])
@@ -25,6 +22,11 @@ gulp.task('browser-sync', ['lint'], function() {
 
     });
     
-	gulp.watch(["**/index.html","styles/*.css","/**/*.js"])
+	gulp.watch(["*/**.html",
+				"styles/*.css",
+				'controllers/*.js',
+				 'script.js',
+				 'server.js',
+				 'service.js'])
 		.on('change', browserSync.reload);
 });	
