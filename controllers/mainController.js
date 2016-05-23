@@ -1,5 +1,5 @@
 angular.module('mapModule')
-	.controller('mainController', function($scope, $location){
+	.controller('mainController', function($scope, $location, railService){
 		$scope.interests = [
 			{name:"Select", type:""},
 	        {name:"Art and Entertainment", type: 'art'},
@@ -26,5 +26,9 @@ angular.module('mapModule')
 			}
 			
 		};
+
+		railService.retrieveYelp('art', function(data){
+			console.log(data);
+		});
 		
 	});
