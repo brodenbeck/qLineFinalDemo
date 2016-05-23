@@ -6,7 +6,13 @@ var jshint = require('gulp-jshint');
 gulp.task('default', ['browser-sync']);
 
 gulp.task('lint', function() {
-	return gulp.src(['public/**/*.js'])
+	return gulp.src(['controllers/**/*.js',
+					 'partials/**/*.js',
+					 'styles/**/*.js',
+					 'gulpfile.js',
+					 'script.js',
+					 'server.js',
+					 'service.js'])
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
 });
@@ -14,11 +20,11 @@ gulp.task('lint', function() {
 gulp.task('browser-sync', ['lint'], function() {
     browserSync.init({
         server: {
-            baseDir: "./public"
+            baseDir: "./"
         }
 
     });
     
-	gulp.watch(["public/**/*.html","public/**/*.css","public/**/*.js"])
+	gulp.watch(["**/index.html","styles/*.css","/**/*.js"])
 		.on('change', browserSync.reload);
 });	

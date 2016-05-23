@@ -1,11 +1,11 @@
 angular.module('mapModule')
 	.controller('mainController', function($scope, $location){
 		$scope.interests = [
-			{name:"Select", type: ""},
-	        {name: "Art and Entertainment", type: 'art'},
-	        {name: "Beer and Wine", type: 'beer'},
-	        {name: "Coffee", type: 'coffee'},
-	        {name: "Shopping", type: 'shopping'}
+			{name:"Select", type:""},
+	        {name:"Art and Entertainment", type: 'art'},
+	        {name:"Beer and Wine", type: 'beer'},
+	        {name:"Coffee", type: 'coffee'},
+	        {name:"Shopping", type: 'shopping'}
 	    ];
 	    $scope.selected = $scope.interests[0];
 	  
@@ -18,12 +18,12 @@ angular.module('mapModule')
 				console.log('you picked beer!');
 				$location.path('/map');
 			}else if(int === 'coffee'){
-				console.log('you picked coffee!')
+				console.log('you picked coffee!');
 				$location.path('/map');
 			}else if(int === 'shopping'){
-				console.log('you picked shopping!')
+				console.log('you picked shopping!');
 				$location.path('/map');
-			};
+			}
 			
 		};
 		
