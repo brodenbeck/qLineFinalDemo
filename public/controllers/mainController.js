@@ -1,52 +1,30 @@
 angular.module('mapModule')
-	.controller('mainController', function($scope){
-		$scope.arts = [
-	        {name: "dia", type: 'DIA' },
-	        {name: "streetArt", type: 'Street Art'},
-	        {name: "jazz", type: 'Jazz'},
-	        {name: "techno", type: 'Techno'}
+	.controller('mainController', function($scope, $location){
+		$scope.interests = [
+			{name:"Select", type: ""},
+	        {name: "Art and Entertainment", type: 'art'},
+	        {name: "Beer and Wine", type: 'beer'},
+	        {name: "Coffee", type: 'coffee'},
+	        {name: "Shopping", type: 'shopping'}
 	    ];
-		$scope.beers = [
-	        {name: "Beer", type: 'beer1' },
-	        {name: "Wine Bar", type: 'beer2'},
-	        {name: "Upscale", type: 'beer3' },
-	        {name: "Gastropub", type: 'beer4'}
-		    ];
-	    $scope.coffees = [
-	        {name: "study", type: 'Study' },
-	        {name: "artsy", type: 'Artsy'},
-	        {name: "jazz", type: 'Jazz'},
-	        {name: "techno", type: 'Techno'}
-	    ];
-	    $scope.shops = [
-	        {name: "dia", type: 'DIA' },
-	        {name: "streetArt", type: 'Street Art'},
-	        {name: "jazz", type: 'Jazz'},
-	        {name: "techno", type: 'Techno'}
-	    ];
+	    $scope.selected = $scope.interests[0];
 	  
-		$scope.art = function(selectedarttopic) {
-			console.log(selectedarttopic.name);
-			// code
+		$scope.hasChanged = function(){
+			var int = $scope.selected.type;
+			if (int === 'art'){
+				console.log('you picked art!');
+				$location.path('/map');
+			}else if(int ==='beer'){
+				console.log('you picked beer!');
+				$location.path('/map');
+			}else if(int === 'coffee'){
+				console.log('you picked coffee!')
+				$location.path('/map');
+			}else if(int === 'shopping'){
+				console.log('you picked shopping!')
+				$location.path('/map');
+			};
+			
 		};
-
-		$scope.beer = function(selectedbeertopic) {
-			console.log(selectedbeertopic.name);
-			// code
-		};
-
-		$scope.coffee = function(selectedcoffeetopic) {
-			console.log(selectedcoffeetopic.name);
-			// code
-		};
-
-		$scope.shopping = function(selectedshoppingtopic) {
-			console.log(selectedshoppingtopic.name);
-			// code
-		};
-
-
-
-
-
+		
 	});

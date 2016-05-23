@@ -2,52 +2,14 @@
 
 {{3+3}}
 <br>
-<!-- <p>What are you interested in?</p>
-
-<button ng-click='art()'>Arts and Entertainment</button>
-<button ng-click='beer()'>Beer and Wine</button>
-<button ng-click='coffee()'>Coffee</button>
-<button ng-click='shopping()'>Shopping</button>
- -->
 <div id= "catagories">
   <fieldset>
-        Arts and Entertainment
+        What are you interested in?
       <br>
     <select 
-      ng-options="p.type for p in arts"
-      ng-model="selectedarttopic">
+      ng-options="p.name for p in interests"
+      ng-model="selected"
+      ng-change='hasChanged()'>
     </select>
-      <button ng-click='art(selectedarttopic)'>Submit
-      </button>
-  </fieldset>
-  <fieldset>
-        Beer and Wine
-        <br>
-    <select 
-      ng-options="p.type for p in beers"
-      ng-model="selectedbeertopic">
-    </select>
-      <button ng-click='beer(selectedbeertopic)'>Submit
-      </button>
-  </fieldset>
-  <fieldset>
-        Coffee
-        <br>
-    <select 
-      ng-options="p.type for p in coffees"
-      ng-model="selectedcoffeetopic">    
-    </select>
-      <button ng-click='coffee(selectedcoffeetopic)'>Submit
-      </button>
-  </fieldset>
-  <fieldset>
-        Shopping
-        <br>
-   <select 
-      ng-options="p.type for p in shops"
-      ng-model="selectedshoppingtopic">    
-    </select>
-      <button ng-click='shopping(selectedshoppingtopic)'>Submit
-      </button>
   </fieldset>
 </div>
