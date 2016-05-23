@@ -7,11 +7,7 @@ gulp.task('default', ['browser-sync']);
 
 gulp.task('lint', function() {
 	return gulp.src(['controllers/**/*.js',
-					 'partials/**/*.js',
-					 'styles/**/*.js',
-					 'gulpfile.js',
 					 'script.js',
-					 'server.js',
 					 'service.js'])
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
@@ -25,6 +21,6 @@ gulp.task('browser-sync', ['lint'], function() {
 
     });
     
-	gulp.watch(["**/index.html","styles/*.css","/**/*.js"])
+	gulp.watch(["index.html","styles/*.css","script.js", 'service.js', 'controllers/*.js', 'partials/*.html'])
 		.on('change', browserSync.reload);
 });	
