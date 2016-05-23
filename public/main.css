@@ -6,3 +6,12 @@ footer {
 	position: absolute;
 	bottom: 0px;
 }
+
+#catagories {
+	display: inline-block;
+
+}
+
+fieldset {
+	border-style: none;
+}
