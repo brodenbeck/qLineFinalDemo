@@ -21,6 +21,11 @@ gulp.task('browser-sync', ['lint'], function() {
 
     });
     
-	gulp.watch(["index.html","styles/*.css","script.js", 'service.js', 'controllers/*.js', 'partials/*.html'])
+	gulp.watch(["*/**.html",
+				"styles/*.css",
+				'controllers/*.js',
+				 'script.js',
+				 'server.js',
+				 'service.js'])
 		.on('change', browserSync.reload);
 });	
