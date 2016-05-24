@@ -10,24 +10,6 @@ angular.module('mapModule')
 	    $scope.selected = $scope.interests[0];
 
 	    $scope.locations = [
-<<<<<<< HEAD
-			{name:"Choose a location", type:""},
-	        {name:"Arts and Entertainment", type: 'arts'},
-	        {name:"Beer and Wine", type: 'bars'},
-	        {name:"Coffee", type: 'coffee'},	       
-	        {name:"Arts and Entertainment", type: 'arts'},
-	       	{name:"Arts and Entertainment", type: 'arts'},
-	        {name:"Beer and Wine", type: 'bars'},
-	       	{name:"Coffee", type: 'coffee'},
-	        {name:"Beer and Wine", type: 'bars'},
-	        {name:"Coffee", type: 'coffee'},
-	        {name:"Beer and Wine", type: 'bars'},
-	        {name:"Coffee", type: 'coffee'},
-	        {name:"Shopping", type: 'shopping'}
-	    ];
-	    $scope.selected = $scope.interests[0];
-	    $scope.selectedlocation = $scope.locations[0];
-=======
 			{name:"Choose a station", type:""},
 	        {name:"Congress Station", type: '500 Woodward Avenue, Detroit MI'},
 	        {name:"Campus Martius Station", type: '1001 Woodward Avenue, Detroit MI'},
@@ -43,7 +25,7 @@ angular.module('mapModule')
 	        {name:"Grand Station", type: '3011 West Grand Boulevard, Detroit MI'}
 	    ];
 	    $scope.location = $scope.locations[0];
->>>>>>> 6a949b1e05edccbc6dd0d03d4ee2fccdf75aab16
+
 	  
 		$scope.hasChanged = function(){
 			var int = $scope.selected.type;
