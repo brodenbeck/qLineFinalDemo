@@ -11,14 +11,14 @@ angular.module('mapModule')
 	  
 		$scope.hasChanged = function(){
 			var int = $scope.selected.type;
+			console.log(int);
 			if (int !== ''){
 				railService.retrieveYelp(int, function(data){
 					railService.setData(data);
 					$location.path('/map');
 				}); 
-
-			}
 			
 		};
+	
 		
 	});
