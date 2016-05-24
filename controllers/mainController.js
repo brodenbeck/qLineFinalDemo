@@ -29,7 +29,7 @@ angular.module('mapModule')
 		$scope.hasChanged = function(){
 			var int = $scope.selected.type;
 			var loc = $scope.location.type;
-			if (int !== ''){
+			if (int !== '' && loc !== ''){
 				railService.retrieveYelp(int, loc, function(data){
 					railService.setData(data);
 					$location.path('/map');
