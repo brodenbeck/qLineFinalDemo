@@ -9,12 +9,12 @@ angular.module('mapModule')
     	
 	    var yelpCall;
 
-	    function retrieveYelp(name, callback) {
+	    function retrieveYelp(name, location, callback) {
 	        var method = 'GET';
 	        var url = 'http://api.yelp.com/v2/search';
 	        var params = {
                 callback: 'angular.callbacks._0', 
-                location: '500 Woodward Avenue, Detroit MI',
+                location: location,
             	category_filter: name,
             	radius_filter: 200,
                 oauth_consumer_key: 'izjGp1yYdO8usFXzOJOOrg', 
