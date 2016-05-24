@@ -28,6 +28,8 @@ angular.module('mapModule')
 	        $http.jsonp(url, {params: params}).success(callback);
 	    }
 
+	    // function to display data for map controller
+
 		return {
 			retrieveYelp: retrieveYelp
 		};

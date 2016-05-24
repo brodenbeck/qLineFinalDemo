@@ -3,7 +3,7 @@ angular.module('mapModule')
 		$scope.interests = [
 			{name:"Choose a category", type:""},
 	        {name:"Arts and Entertainment", type: 'arts'},
-	        {name:"Beer and Wine", type: 'beer'},
+	        {name:"Beer and Wine", type: 'bars'},
 	        {name:"Coffee", type: 'coffee'},
 	        {name:"Shopping", type: 'shopping'}
 	    ];
@@ -14,14 +14,10 @@ angular.module('mapModule')
 			if (int !== ''){
 				railService.retrieveYelp(int, function(data){
 					console.log(data);
-				}); // refactor without if-statement, accounting for empty string
+				}); 
 				$location.path('/map');
 			}
 			
 		};
-
-		// railService.retrieveYelp('arts', function(data){
-		// 	console.log(data);
-		// });
 		
 	});
