@@ -7,6 +7,21 @@ angular.module('mapModule')
 	        {name:"Coffee", type: 'coffee'},
 	        {name:"Shopping", type: 'shopping'}
 	    ];
+	    $scope.locations = [
+			{name:"Choose a category", type:""},
+	        {name:"Arts and Entertainment", type: 'arts'},
+	        {name:"Beer and Wine", type: 'bars'},
+	        {name:"Coffee", type: 'coffee'},	       
+	        {name:"Arts and Entertainment", type: 'arts'},
+	       	{name:"Arts and Entertainment", type: 'arts'},
+	        {name:"Beer and Wine", type: 'bars'},
+	       	{name:"Coffee", type: 'coffee'},
+	        {name:"Beer and Wine", type: 'bars'},
+	        {name:"Coffee", type: 'coffee'},
+	        {name:"Beer and Wine", type: 'bars'},
+	        {name:"Coffee", type: 'coffee'},
+	        {name:"Shopping", type: 'shopping'}
+	    ];
 	    $scope.selected = $scope.interests[0];
 	  
 		$scope.hasChanged = function(){
