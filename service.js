@@ -20,11 +20,11 @@ angular.module('mapModule')
                 oauth_signature_method: "HMAC-SHA1",
                 oauth_timestamp: new Date().getTime(),
                 oauth_nonce: randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'),
-            }	
+            };
 	        var consumerSecret = 'uqhotfutFb5OjfT74b-MzKPVQdk';
 	        var tokenSecret = '07RIuOYl_szzXNILeGxzm0qezUw';
 	        var signature = oauthSignature.generate(method, url, params, consumerSecret, tokenSecret, { encodeSignature: false});
-	        params['oauth_signature'] = signature;
+	        params.oauth_signature = signature;
 	        $http.jsonp(url + '?callback=JSON_CALLBACK', {params: params}).success(callback);
 	    } 
 
