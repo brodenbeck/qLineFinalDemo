@@ -11,19 +11,10 @@ angular.module('mapModule')
 	  
 		$scope.hasChanged = function(){
 			var int = $scope.selected.type;
-			if (int === 'arts'){
+			if (int !== ''){
 				railService.retrieveYelp(int, function(data){
 					console.log(data);
 				}); // refactor without if-statement, accounting for empty string
-				$location.path('/map');
-			}else if(int ==='beer'){
-				console.log('you picked beer!');
-				$location.path('/map');
-			}else if(int === 'coffee'){
-				console.log('you picked coffee!');
-				$location.path('/map');
-			}else if(int === 'shopping'){
-				console.log('you picked shopping!');
 				$location.path('/map');
 			}
 			

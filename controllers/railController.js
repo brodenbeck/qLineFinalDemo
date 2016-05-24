@@ -1,5 +1,4 @@
 angular.module('mapModule')
-	.controller('railController', function($scope){
-
+	.controller('railController', function($scope, railService){
 
 	});
