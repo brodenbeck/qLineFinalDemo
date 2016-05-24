@@ -12,8 +12,9 @@
     </select>
     <select 
       ng-options="p.name for p in locations"
-      ng-model="selectedlocation">
-    </select>
-    <submit
+      ng-model="location">
+
+    </select> 
+    <button ng-click="hasChanged()">submit</button>
   </fieldset>
 </div>
