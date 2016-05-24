@@ -14,10 +14,9 @@ angular.module('mapModule')
 			console.log(int);
 			if (int !== ''){
 				railService.retrieveYelp(int, function(data){
-					console.log(data);
+					railService.setData(data);
+					$location.path('/map');
 				}); 
-				$location.path('/map');
-			}		
 			
 		};
 	
