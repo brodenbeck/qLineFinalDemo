@@ -6,7 +6,9 @@ angular.module('mapModule')
 		    for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
 		        return result;
 	    }
-    
+    	
+	    var yelpCall;
+
 	    function retrieveYelp(name, callback) {
 	        var method = 'GET';
 	        var url = 'http://api.yelp.com/v2/search';
@@ -25,13 +27,33 @@ angular.module('mapModule')
 	        var tokenSecret = '07RIuOYl_szzXNILeGxzm0qezUw';
 	        var signature = oauthSignature.generate(method, url, params, consumerSecret, tokenSecret, { encodeSignature: false});
 	        params['oauth_signature'] = signature;
+	        // $http.jsonp(url, {params: params}).success(callback);
 	        $http.jsonp(url, {params: params}).success(callback);
 	    }
 
-	    // function to display data for map controller
+	    function setData(someData) {
+	    	yelpCall = someData;
+	    }
+
+	    function getData() {
+	    	returnData = yelpCall.businesses;
+	    	var places = [];
+	    	returnData.forEach(function(el) {
+				var instance = {};
+				instance.name = el.name;
+				instance.address = el.location.address[0];
+				instance.rating = el.rating;
+				instance.phone = el.display_phone;
+				instance.url = el.url;
+				places.push(instance);
+			});
+	    	return places;
+	    }
 
 		return {
-			retrieveYelp: retrieveYelp
+			retrieveYelp: retrieveYelp,
+			setData: setData,
+			getData: getData
 		};
 
 	});

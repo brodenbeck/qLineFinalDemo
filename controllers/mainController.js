@@ -13,9 +13,10 @@ angular.module('mapModule')
 			var int = $scope.selected.type;
 			if (int !== ''){
 				railService.retrieveYelp(int, function(data){
-					console.log(data);
+					railService.setData(data);
+					$location.path('/map');
 				}); 
-				$location.path('/map');
+
 			}
 			
 		};

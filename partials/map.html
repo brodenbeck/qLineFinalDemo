@@ -3,3 +3,8 @@
 {{4+4}}
 
 <p>This page will display the map and Yelp data.</p>
+
+<div ng-repeat='place in yelpArr'>
+	<h1>{{ place.name }}</h1>
+	<p>{{ place.phone }}</p>
+</div>
