@@ -8,7 +8,7 @@ angular.module('mapModule')
 	        {name:"Shopping", type: 'shopping'}
 	    ];
 	    $scope.locations = [
-			{name:"Choose a category", type:""},
+			{name:"Choose a location", type:""},
 	        {name:"Arts and Entertainment", type: 'arts'},
 	        {name:"Beer and Wine", type: 'bars'},
 	        {name:"Coffee", type: 'coffee'},	       
@@ -23,6 +23,7 @@ angular.module('mapModule')
 	        {name:"Shopping", type: 'shopping'}
 	    ];
 	    $scope.selected = $scope.interests[0];
+	    $scope.selectedlocation = $scope.locations[0];
 	  
 		$scope.hasChanged = function(){
 			var int = $scope.selected.type;
