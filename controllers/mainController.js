@@ -1,8 +1,8 @@
 angular.module('mapModule')
 	.controller('mainController', function($scope, $location, railService){
 		$scope.interests = [
-			{name:"Select", type:""},
-	        {name:"Art and Entertainment", type: 'art'},
+			{name:"Choose a category", type:""},
+	        {name:"Arts and Entertainment", type: 'arts'},
 	        {name:"Beer and Wine", type: 'beer'},
 	        {name:"Coffee", type: 'coffee'},
 	        {name:"Shopping", type: 'shopping'}
@@ -11,8 +11,10 @@ angular.module('mapModule')
 	  
 		$scope.hasChanged = function(){
 			var int = $scope.selected.type;
-			if (int === 'art'){
-				console.log('you picked art!');
+			if (int === 'arts'){
+				railService.retrieveYelp(int, function(data){
+					console.log(data);
+				}); // refactor without if-statement, accounting for empty string
 				$location.path('/map');
 			}else if(int ==='beer'){
 				console.log('you picked beer!');
@@ -27,8 +29,8 @@ angular.module('mapModule')
 			
 		};
 
-		railService.retrieveYelp('art', function(data){
-			console.log(data);
-		});
+		// railService.retrieveYelp('arts', function(data){
+		// 	console.log(data);
+		// });
 		
 	});
