@@ -17,8 +17,7 @@ angular.module('mapModule')
 					railService.setData(data);
 					$location.path('/map');
 				}); 
-			
+			}			
 		};
-	
 		
 	});
