@@ -1,9 +1,10 @@
 
 <!-- partial for rail image and venues --> 
+<img src="images/yelp.png">
 <div ng-repeat="places in yelpArr">
-	<img src="images/yelp.png">
         <div ng-if="place_index == $index">
-    	<button ng-click="next()">Next</button>
+    	<button ng-click="back()"><=</button>
+    	<button ng-click="next()">=></button>
             <a href='{{ places.url }}'><h3>{{ places.name }}</h3></a>
 			<p>{{ places.phone }}</p>
 			<p>{{ places.address }}</p>
