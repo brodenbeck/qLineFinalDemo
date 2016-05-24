@@ -26,7 +26,7 @@ angular.module('mapModule')
 	        var signature = oauthSignature.generate(method, url, params, consumerSecret, tokenSecret, { encodeSignature: false});
 	        params['oauth_signature'] = signature;
 	        $http.jsonp(url + '?callback=JSON_CALLBACK', {params: params}).success(callback);
-	    }
+	    } 
 
 	    // function to display data for map controller
 

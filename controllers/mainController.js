@@ -16,7 +16,6 @@ angular.module('mapModule')
 				railService.retrieveYelp(int, function(data){
 					console.log(data);
 				}); 
-				int = "";
 				$location.path('/map');
 			}		
 			
