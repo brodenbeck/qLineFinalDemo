@@ -18,7 +18,6 @@ angular.module('mapModule')
 					$location.path('/map');
 				}); 
 			
-		};
-	
-		
-	});
+            }
+        };
+});
