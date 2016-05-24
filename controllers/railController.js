@@ -20,14 +20,3 @@ angular.module('mapModule')
 
 });
 
-
-	// 	$scope.forwardcounter = function(){
-	// 		console.log(returnedArr[0]);
-	// 			return returnedArr[0];
-	// 		};
-	// 	$scope.backwardscounter = function(){
-	// 		console.log(returnedArr[1]);
-	// 			return returnedArr[1];
-	// 		};
-
-	// });

@@ -15,3 +15,7 @@ footer {
 fieldset {
 	border-style: none;
 }
+
+img {
+	max-width: 90%;
+}
