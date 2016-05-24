@@ -5,6 +5,7 @@
 <p>This page will display the map and Yelp data.</p>
 
 <div ng-repeat='place in yelpArr'>
-	<h1>{{ place.name }}</h1>
+	<a href='{{ place.url }}'><h1>{{ place.name }}</h1></a>
 	<p>{{ place.phone }}</p>
+	<p>{{ place.address }}</p>
 </div>
