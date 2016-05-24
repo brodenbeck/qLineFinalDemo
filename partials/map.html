@@ -1,11 +1,7 @@
 <!-- partial for rail image and venues -->
 
-{{4+4}}
-
-<p>This page will display the map and Yelp data.</p>
-
 <div ng-repeat='place in yelpArr'>
-	<a href='{{ place.url }}'><h1>{{ place.name }}</h1></a>
+	<a href='{{ place.url }}'><h3>{{ place.name }}</h3></a>
 	<p>{{ place.phone }}</p>
 	<p>{{ place.address }}</p>
 </div>

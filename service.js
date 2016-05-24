@@ -27,7 +27,6 @@ angular.module('mapModule')
 	        var tokenSecret = '07RIuOYl_szzXNILeGxzm0qezUw';
 	        var signature = oauthSignature.generate(method, url, params, consumerSecret, tokenSecret, { encodeSignature: false});
 	        params['oauth_signature'] = signature;
-	        // $http.jsonp(url, {params: params}).success(callback);
 	        $http.jsonp(url, {params: params}).success(callback);
 	    }
 
