@@ -13,7 +13,7 @@ angular.module('mapModule')
 			{name:"Choose a station", type:""},
 	        {name:"Congress Station", type: '500 Woodward Avenue, Detroit MI'},
 	        {name:"Campus Martius Station", type: '1001 Woodward Avenue, Detroit MI'},
-	        {name:"Grand Circus Station", type: '5170 Woodward Avenue, Detroit MI'},	       
+	        {name:"Grand Circus Station", type: '1570 Woodward Avenue, Detroit MI'},	       
 	        {name:"Foxtown Station", type: '2326 Woodward Avenue, Detroit MI'},
 	       	{name:"Sibley Station", type: '445 Ledyard Street, Detroit MI'},
 	        {name:"Martin Luther King, Jr. Station", type: '3663 Woodward Avenue, Detroit MI'},
@@ -26,6 +26,11 @@ angular.module('mapModule')
 	    ];
 	    $scope.location = $scope.locations[0];
 
+	    $scope.errors = [
+	    	{message: "Please select both catagory and station"},
+		   	{message: "Please select station"},
+	    	{message: "Please select catagory"}
+	    ];
 	  
 		$scope.hasChanged = function(){
 			var int = $scope.selected.type;
@@ -35,7 +40,17 @@ angular.module('mapModule')
 					railService.setData(data);
 					$location.path('/map');
 				}); 
-			}			
+			}else if (int === '' && loc === ''){
+				$scope.error_index = 0;	
+        	}else if (loc === ''){
+        		$scope.error_index = 1;
+			}else if (int === ''){
+				$scope.error_index = 2;
+			}
 		};
 		
 	});
+
+	
+	
+           
