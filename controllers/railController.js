@@ -1,14 +1,21 @@
 angular.module('mapModule')
 	.controller('railController', function($scope, railService){
 		var returnedArr = railService.getData();
-		if(returnedArr.length === 0) {
-			$scope.yelpArr = [{ phone: "I'm sorry, there is nothing available for your interests at this stop."}];
-		}else{
-			$scope.yelpArr = returnedArr;
-		}
+		$scope.yelpArr = returnedArr;
+		
 
     $scope.place_index = 0;
 
+    console.log(returnedArr.length);
+
+    $scope.show = function(){
+    	if (returnedArr.length === 0){
+    		return false;
+    	}else{
+    		return true;
+    	}
+    }
+    console.log($scope.show());
 
     $scope.next = function () {
         if ($scope.place_index >= returnedArr.length - 1) {
