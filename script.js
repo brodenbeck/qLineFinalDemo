@@ -16,7 +16,11 @@ angular.module('mapModule', ['ngRoute'])
 				controller: 'contactController',
 				templateUrl: 'partials/contact.html'
 			})
-			
+			.when('/itinerary',
+			{
+				controller: 'itineraryController',
+				templateUrl: 'partials/itinerary.html'
+			})
 			.when('/error',
 			{
 				controller: 'errorController',

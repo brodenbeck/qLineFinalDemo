@@ -55,4 +55,8 @@ angular.module('mapModule')
 			getData: getData
 		};
 
+
+	
+
+		
 	});
