@@ -3,7 +3,6 @@ angular.module('mapModule')
         var returnedArr = railService.getData();
         $scope.yelpArr = returnedArr;
     
-
     $scope.place_index = 0;
   
     $scope.show = function(){
@@ -13,17 +12,14 @@ angular.module('mapModule')
             return true;
         }
     };
-
     $scope.next = function () {
         if ($scope.place_index >= returnedArr.length - 1) {
             $scope.place_index = 0;
         }else{
             $scope.place_index++;
         }
-    console.log(($scope.place_index) + "/" + (returnedArr.length))
+    console.log(($scope.place_index) + "/" + (returnedArr.length));
     };
-
-
     $scope.back = function () {
         if ($scope.place_index <= returnedArr.length - 1 &&
             $scope.place_index > 0) {
@@ -31,21 +27,21 @@ angular.module('mapModule')
         } else {
             $scope.place_index = returnedArr.length - 1;
         }
-    console.log(($scope.place_index) + "/" + (returnedArr.length))
+    console.log(($scope.place_index) + "/" + (returnedArr.length));
     };
-
-    var stuffToDo = [];
     $scope.intin = function(){
-        stuffToDo.push(returnedArr[$scope.place_index]);
-        console.log(stuffToDo);
+        var stuffToDo = returnedArr[$scope.place_index];
+        railService.saveItin(stuffToDo);
+     
     };
-
-
-
-
-
-
 });
+
+
+
+
+
+
+
 
 
 

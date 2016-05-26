@@ -1,14 +1,12 @@
 angular.module('mapModule')
-	.controller('itineraryController', function($scope, railService){
+    .controller('itineraryController', function($scope, railService){
+        $scope.itinerary = railService.getItOut();
+    	
+ 
+           		
+       		
 
-    
-
-        
-
-        // $scope.itinerary.push(returnedArr[$scope.place_index]);
-        // console.log($scope.itinerary);
-
-
-
-
-	});
+    	
+    		
+ 
+    });
