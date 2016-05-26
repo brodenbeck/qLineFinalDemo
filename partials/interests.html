@@ -9,4 +9,5 @@
       ng-change="hasChanged()">
     </select>
   </fieldset>
+  <div ng-if="error_index === $index" ng-repeat="error in errors">{{error.message}}</div>
 </div>

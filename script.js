@@ -21,7 +21,6 @@ angular.module('mapModule', ['ngRoute'])
 				controller: 'itineraryController',
 				templateUrl: 'partials/itinerary.html'
 			})
-			
 			.when('/error',
 			{
 				controller: 'errorController',

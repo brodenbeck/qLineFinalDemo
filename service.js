@@ -63,7 +63,6 @@ angular.module('mapModule')
 					instance.url = el.url;
 					newArray.push(instance);
 				});
-				//change to globally defined array
 				globalStation[i] = newArray;
 			}
 	    }

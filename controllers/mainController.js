@@ -34,5 +34,9 @@ angular.module('mapModule')
 					});
 			}			
 		};
-		
+
 	});
+
+	
+	
+           

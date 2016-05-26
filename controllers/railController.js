@@ -1,7 +1,6 @@
 angular.module('mapModule')
-	.controller('railController', function($scope, $compile, railService){		
 
-    // {{place_index + 1}}/{{yelpArr.length}}
+	.controller('railController', function($scope, $compile, railService){		
 
         $scope.stops = {
             congress: {
@@ -148,4 +147,3 @@ angular.module('mapModule')
         }
 
     });
-
