@@ -1,5 +1,8 @@
-<div  ng-repeat="p in itinerary"> 
+<div ng-show= 'empty()'  ng-repeat="p in itinerary"> 
 	<a href='{{ p.url }}'><h3>{{ p.name }}</h3></a></p>
 		<p>{{ p.phone }}</p>
 		<p>{{ p.address }}</p>
+	<button ng-click="itout(p)">remove</button>
 </div>
+
+<p ng-show='!empty()'> Nothing in itinerary yet!  </p>
