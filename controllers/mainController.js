@@ -27,9 +27,9 @@ angular.module('mapModule')
 	    $scope.location = $scope.locations[0];
 
 	    $scope.errors = [
-	    	{message: "Please select both catagory and station"},
+	    	{message: "Please select both category and station"},
 		   	{message: "Please select station"},
-	    	{message: "Please select catagory"}
+	    	{message: "Please select category"}
 	    ];
 	  
 		$scope.hasChanged = function(){

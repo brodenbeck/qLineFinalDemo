@@ -1,4 +1,4 @@
-<div ng-show= "show()" ng-repeat="places in yelpArr" ng-if="place_index == $index">
+<div ng-show="show()" ng-repeat="places in yelpArr" ng-if="place_index === $index">
    	<button ng-click="back()"><=</button>
    	<button ng-click="next()">=></button>
        <p>{{place_index + 1}}/{{yelpArr.length}}<a href='{{ places.url }}'><h3>{{ places.name }}</h3></a></p>

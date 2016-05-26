@@ -14,7 +14,7 @@ angular.module('mapModule')
             var method = 'GET';
             var url = 'http://api.yelp.com/v2/search';
             var params = {
-                callback: 'angular.callbacks._0', 
+                callback: 'angular.callbacks._0',
                 location: location,
                 category_filter: name,
                 radius_filter: 200,
@@ -36,13 +36,12 @@ angular.module('mapModule')
         }
 
         function getData() {
-            returnData = yelpCall.businesses;
+            var returnData = yelpCall.businesses;
             var places = [];
             returnData.forEach(function(el) {
                 var instance = {};
                 instance.name = el.name;
                 instance.address = el.location.address[0];
-                instance.rating = el.rating;
                 instance.phone = el.display_phone;
                 instance.url = el.url;
                 places.push(instance);
