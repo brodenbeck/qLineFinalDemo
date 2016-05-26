@@ -1,17 +1,17 @@
 <!-- home page for selecting user interest -->
 <div id= "categories">
   <fieldset>
-        What are you interested in?
-      <br>
-    <select 
-      ng-options="p.name for p in interests"
-      ng-model="selected">
-    </select>
-    <select 
-      ng-options="p.name for p in locations"
-      ng-model="location">
-    </select> 
-    <button ng-click="hasChanged()">submit</button>
+  What are you interested in?
+  <br>
+  <select 
+    ng-options="p.name for p in interests"
+    ng-model="selected">
+  </select>
+  <select
+    ng-options="p.name for p in locations"
+    ng-model="location">
+  </select> 
+  <button ng-click="hasChanged()">submit</button>
   </fieldset>
   <div ng-if="error_index === $index" ng-repeat="error in errors">{{error.message}}</div>
 </div>
