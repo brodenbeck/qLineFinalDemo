@@ -1,13 +1,15 @@
 angular.module('mapModule') 
     .factory('railService', function($http){
         
+        var yelpCall;
+        var stuffArray = [];
+
         function randomString(length, chars) {
             var result = '';
             for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
                 return result;
         }
         
-        var yelpCall;
         function retrieveYelp(name, location, callback) {
             var method = 'GET';
             var url = 'http://api.yelp.com/v2/search';
@@ -28,9 +30,11 @@ angular.module('mapModule')
             params.oauth_signature = signature;
             $http.jsonp(url + '?callback=JSON_CALLBACK', {params: params}).success(callback);
         } 
+
         function setData(someData) {
             yelpCall = someData;
         }
+
         function getData() {
             returnData = yelpCall.businesses;
             var places = [];
@@ -45,7 +49,7 @@ angular.module('mapModule')
             });
             return places;
         }
-        var stuffArray = [];
+        
         function saveItin(stuffToDo){
         	stuffArray.push(stuffToDo);         
         }
@@ -53,6 +57,7 @@ angular.module('mapModule')
         function getItOut() {
             return stuffArray;
         }
+
         return {
             retrieveYelp: retrieveYelp,
             setData: setData,
@@ -60,6 +65,5 @@ angular.module('mapModule')
             saveItin: saveItin,
             getItOut: getItOut 
         };
-    
         
     });

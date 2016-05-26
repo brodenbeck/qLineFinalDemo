@@ -1,13 +1,11 @@
-
-<!-- partial for rail image and venues --> 
-<img src="images/yelp.png">
 <div ng-show= "show()" ng-repeat="places in yelpArr" ng-if="place_index == $index">
    	<button ng-click="back()"><=</button>
    	<button ng-click="next()">=></button>
        <p>{{place_index + 1}}/{{yelpArr.length}}<a href='{{ places.url }}'><h3>{{ places.name }}</h3></a></p>
 		<p>{{ places.phone }}</p>
 		<p>{{ places.address }}</p>
-	<button ng-click="intin()">+</button>
+	<button ng-click="itin()">+</button>
+	<img src="images/yelp.png">
 </div>
-<p ng-show='!show()'> I'm sorry, there is nothing available for your interests at this stop. </p>
 
+<p ng-show='!show()'> I'm sorry, there is nothing available for your interests at this stop. </p>
