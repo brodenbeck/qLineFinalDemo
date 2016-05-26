@@ -46,6 +46,7 @@ angular.module('mapModule')
                 instance.phone = el.display_phone;
                 instance.url = el.url;
                 places.push(instance);
+                console.log(instance);
             });
             return places;
         }
