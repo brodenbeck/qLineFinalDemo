@@ -1,14 +1,133 @@
-
-<!-- partial for rail image and venues --> 
-<img src="images/yelp.png">
-<div ng-repeat="places in yelpArr">
-        <div ng-if="place_index == $index">
-    	<button ng-click="back()"><=</button>
-    	<button ng-click="next()">=></button>
-            <a href='{{ places.url }}'><h3>{{ places.name }}</h3></a>
-			<p>{{ places.phone }}</p>
-			<p>{{ places.address }}</p>
-        </div>
+<div ng-show="stops.congress.show(stops.congress)">
+	<div ng-repeat='place in stops.congress.displayData track by $index' ng-if="stops.congress.placeIndex === $index">
+		<h2>Congress Station</h2>
+		<button ng-click='stops.congress.back(stops.congress)'> < </button>
+  		<button ng-click='stops.congress.next(stops.congress)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
 </div>
-<a href='/#/'>Return</a>
 
+<div ng-show="stops.campusMartius.show(stops.campusMartius)">
+	<div ng-repeat='place in stops.campusMartius.displayData track by $index' ng-if='stops.campusMartius.placeIndex === $index'>
+		<h2>Campus Martius Station</h2>
+		<button ng-click='stops.campusMartius.back(stops.campusMartius)'> < </button>
+		<button ng-click='stops.campusMartius.next(stops.campusMartius)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.grandCircus.show(stops.grandCircus)">
+	<div ng-repeat='place in stops.grandCircus.displayData track by $index' ng-if='stops.grandCircus.placeIndex === $index'>
+		<h2>Grand Circus Station</h2>
+		<button ng-click='stops.grandCircus.back(stops.grandCircus)'> < </button>
+		<button ng-click='stops.grandCircus.next(stops.grandCircus)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.foxtown.show(stops.foxtown)">
+	<div ng-repeat='place in stops.foxtown.displayData track by $index' ng-if='stops.foxtown.placeIndex === $index'>
+		<h2>Foxtown Station</h2>
+		<button ng-click='stops.foxtown.back(stops.foxtown)'> < </button>
+		<button ng-click='stops.foxtown.next(stops.foxtown)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.sibley.show(stops.sibley)">
+	<div ng-repeat='place in stops.sibley.displayData track by $index' ng-if='stops.sibley.placeIndex === $index'>
+		<h2>Sibley Station</h2>
+		<button ng-click='stops.sibley.back(stops.sibley)'> < </button>
+		<button ng-click='stops.sibley.next(stops.sibley)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.mlk.show(stops.mlk)">
+	<div ng-repeat='place in stops.mlk.displayData track by $index' ng-if='stops.mlk.placeIndex === $index'>
+		<h2>Martin Luther King, Jr. Station</h2>
+		<button ng-click='stops.mlk.back(stops.mlk)'> < </button>
+		<button ng-click='stops.mlk.next(stops.mlk)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.canfield.show(stops.canfield)">
+	<div ng-repeat='place in stops.canfield.displayData track by $index' ng-if='stops.canfield.placeIndex === $index'>
+		<h2>Canfield Station</h2>
+		<button ng-click='stops.canfield.back(stops.canfield)'> < </button>
+		<button ng-click='stops.canfield.next(stops.canfield)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.warren.show(stops.warren)">
+	<div ng-repeat='place in stops.warren.displayData track by $index' ng-if='stops.warren.placeIndex === $index'>
+		<h2>Warren Station</h2>
+		<button ng-click='stops.warren.back(stops.warren)'> < </button>
+		<button ng-click='stops.warren.next(stops.warren)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.ferry.show(stops.ferry)">
+	<div ng-repeat='place in stops.ferry.displayData track by $index' ng-if='stops.ferry.placeIndex === $index'>
+		<h2>Ferry Station</h2>
+		<button ng-click='stops.ferry.back(stops.ferry)'> < </button>
+		<button ng-click='stops.ferry.next(stops.ferry)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.amsterdam.show(stops.amsterdam)"> 
+	<div ng-repeat='place in stops.amsterdam.displayData track by $index' ng-if='stops.amsterdam.placeIndex === $index'>
+		<h2>Amsterdam Station</h2>
+		<button ng-click='stops.amsterdam.back(stops.amsterdam)'> < </button>
+		<button ng-click='stops.amsterdam.next(stops.amsterdam)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.amtrak.show(stops.amtrak)">
+	<div ng-repeat='place in stops.amtrak.displayData track by $index' ng-if='stops.amtrak.placeIndex === $index'>
+		<h2>Amtrak Station</h2>
+		<button ng-click='stops.amtrak.back(stops.amtrak)'> < </button>
+		<button ng-click='stops.amtrak.next(stops.amtrak)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<div ng-show="stops.grand.show(stops.grand)">
+	<div ng-repeat='place in stops.grand.displayData track by $index' ng-if='stops.grand.placeIndex === $index'>
+		<h2>Grand Station</h2>
+		<button ng-click='stops.grand.back(stops.grand)'> < </button>
+		<button ng-click='stops.grand.next(stops.grand)'> > </button>
+		<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+	</div>
+</div>
+
+<a href='/#/'>Return</a>

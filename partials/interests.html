@@ -5,12 +5,8 @@
       <br>
     <select 
       ng-options="p.name for p in interests"
-      ng-model="selected">
+      ng-model="selected"
+      ng-change="hasChanged()">
     </select>
-    <select 
-      ng-options="p.name for p in locations"
-      ng-model="location">
-    </select> 
-    <button ng-click="hasChanged()">submit</button>
   </fieldset>
 </div>
