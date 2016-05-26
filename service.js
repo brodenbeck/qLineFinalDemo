@@ -2,6 +2,7 @@ angular.module('mapModule')
 	.factory('railService', function($http, $q){
 		
 		var globalStation =[];
+		var itinerary = [];
 
 		function randomString(length, chars) {
 		    var result = '';
@@ -68,11 +69,15 @@ angular.module('mapModule')
 	    }
 
 	    function displayData(elementIndex) {
-	    	if(globalStation[elementIndex].length !== 0) {
-	    		return globalStation[elementIndex];
-	    	} else {
-	    		return "There is nothing here."
-	    	}
+	    	return globalStation[elementIndex];
+	    }
+
+	    function saveItin(stuffToDo) {
+	    	itinerary.push(stuffToDo);
+	    }
+
+	    function getItin() {
+	    	return itinerary;
 	    }
 
 		return {
@@ -80,7 +85,9 @@ angular.module('mapModule')
 			buildYelpObject: buildYelpObject,
 			retrieveYelp: retrieveYelp,
 			getYelps: getYelps,
-			getData: getData
+			getData: getData,
+			saveItin: saveItin,
+			getItin: getItin
 		};
 
 	});

@@ -1,0 +1,8 @@
+<div ng-show='show()' ng-repeat='place in itinerary'>
+	<a href="{{ place.url }}"><h3>{{ place.name }}</h3></a>
+	<p>{{ place.phone }}</p>
+	<p>{{ place.address }}</p>
+	<button ng-click='remove(place)'>Remove</button>
+</div>
+
+<p ng-show='!show()'>There's nothing in your itinerary.</p>
