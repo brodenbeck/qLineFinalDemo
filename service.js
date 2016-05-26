@@ -3,6 +3,7 @@ angular.module('mapModule')
         
         var yelpCall;
         var stuffArray = [];
+        var busStation;
 
         function randomString(length, chars) {
             var result = '';
@@ -42,28 +43,44 @@ angular.module('mapModule')
                 var instance = {};
                 instance.name = el.name;
                 instance.address = el.location.address[0];
+           
                 instance.phone = el.display_phone;
                 instance.url = el.url;
                 places.push(instance);
-                console.log(instance);
+               
             });
             return places;
         }
         
+        // function busStopIn(sta){
+        //     busStation = sta;
+        //     console.log(sta);
+        //     console.log(busStation);
+        // } 
         function saveItin(stuffToDo){
-        	stuffArray.push(stuffToDo);         
+            stuffArray.push(stuffToDo);         
         }
 
         function getItOut() {
             return stuffArray;
         }
 
+
+        // function busStopOut(){
+        //     return busStation;
+
+        // }
+
+     
+
         return {
             retrieveYelp: retrieveYelp,
             setData: setData,
             getData: getData,
             saveItin: saveItin,
-            getItOut: getItOut 
+            getItOut: getItOut,
+            busStopIn:busStopIn,
+            busStopOut:busStopOut
         };
         
     });

@@ -1,8 +1,7 @@
 angular.module('mapModule')
     .controller('itineraryController', function($scope, railService){
-        
+    // $scope.busstop = railService.busStopOut();
     $scope.itinerary = railService.getItOut();
-    console.log($scope.itinerary);
 
     $scope.empty = function(){
         if ($scope.itinerary.length === 0){

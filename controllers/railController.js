@@ -33,6 +33,7 @@ angular.module('mapModule')
     $scope.itin = function(){
         var stuffToDo = returnedArr[$scope.place_index];
         railService.saveItin(stuffToDo);
+        console.log(stuffToDo);
        $scope.added = function(){
         if (stuffToDo === returnedArr[$scope.place_index]){
             return true;
