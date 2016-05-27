@@ -33,3 +33,27 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #D5D4CD;
 	width: 45%;
 }
+
+.int-div {
+	position: relative;
+	top: 20px;
+	left: 15%;
+	width: 70%;
+}
+
+.int-button {
+	background-color: #004D59;
+	border-radius: 1px;
+	outline: none;
+	border: 0;
+	color: #D5D4CD;
+	font-family: 'Quicksand', sans-serif;
+	width: 49%;
+	padding: 10px;
+	margin: 5px;
+}
+
+i {
+	color: #D5D4CD;
+	padding: 5%;
+}

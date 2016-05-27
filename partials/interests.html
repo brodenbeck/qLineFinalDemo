@@ -13,8 +13,12 @@
     
     <div ng-if="error_index === $index" ng-repeat="error in errors">{{error.message}}</div>
 </div> -->
+<div class="int-div">
+  <button class=" int-button" ng-click='artsClick()'><i class="fa fa-music fa-5x" aria-hidden="true"></i><br/><br/>Entertainment</button>
+  <button class=" int-button" ng-click='beerClick()'><i class="fa fa-glass fa-5x" aria-hidden="true"></i><br/><br/>Drinks</button>
+</div>
 
-<button ng-click='artsClick()'>Arts and Entertainment</button>
-<button ng-click='beerClick()'>Beer and Wine</button>
-<button ng-click='coffeeClick()'>Coffee</button>
-<button ng-click='shopClick()'>Shopping</button>
+<div class="int-div">
+  <button class=" int-button" ng-click='coffeeClick()'><i class="fa fa-coffee fa-5x" aria-hidden="true"></i><br/><br/>Coffee</button>
+  <button class="int-button" ng-click='shopClick()'><i class="fa fa-shopping-bag fa-5x" aria-hidden="true"></i><br/><br/>Shopping</button>
+</div>
