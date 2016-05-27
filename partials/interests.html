@@ -1,8 +1,8 @@
 <!-- home page for selecting user interest -->
-<div id= "categories">
+<!-- <div id= "categories">
     <fieldset> What are you interested in?
         <br>
-        <div id='soflow'>
+        <div>
             <select
               ng-options="p.name for p in interests"
               ng-model="selected"
@@ -12,4 +12,9 @@
     </fieldset>
     
     <div ng-if="error_index === $index" ng-repeat="error in errors">{{error.message}}</div>
-</div>
+</div> -->
+
+<button ng-click='artsClick()'>Arts and Entertainment</button>
+<button ng-click='beerClick()'>Beer and Wine</button>
+<button ng-click='coffeeClick()'>Coffee</button>
+<button ng-click='shopClick()'>Shopping</button>

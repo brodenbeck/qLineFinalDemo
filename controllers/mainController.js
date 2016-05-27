@@ -1,13 +1,5 @@
 angular.module('mapModule')
 	.controller('mainController', function($scope, $location, railService){
-		$scope.interests = [
-			{name:"Choose a category ... ", type:""},
-	        {name:"Arts and Entertainment", type: 'arts'},
-	        {name:"Beer and Wine", type: 'bars'},
-	        {name:"Coffee", type: 'coffee'},
-	        {name:"Shopping", type: 'shopping'}
-	    ];
-	    $scope.selected = $scope.interests[0];
 
 	    var locations = [
 	    	'500 Woodward Avenue Detroit MI',
@@ -22,18 +14,43 @@ angular.module('mapModule')
 	    	'6080 Woodward Avenue Detroit MI',
 	    	'6364 Woodward Avenue Detroit MI',
 	    	'3100 West Grand Boulevard Detroit MI'
-	    	];
-	  
-		$scope.hasChanged = function(){
-			var interest = $scope.selected.type;
-			if (interest !== ''){
-				railService.getYelps(interest, locations)
-					.then(function(data) {
-						railService.getData(data);
-						$location.path('/map');
-					});
-			}			
-		};
+    	];
+
+    	$scope.artsClick = function() {
+    		var interest = 'arts';
+    		railService.getYelps(interest, locations)
+    			.then(function(data) {
+    				railService.getData(data);
+    				$location.path('/map');
+    			});
+    	}
+
+    	$scope.beerClick = function() {
+    		var interest = 'bars';
+    		railService.getYelps(interest, locations)
+    			.then(function(data) {
+    				railService.getData(data);
+    				$location.path('/map');
+    			});
+    	}
+
+    	$scope.coffeeClick = function() {
+    		var interest = 'coffee';
+    		railService.getYelps(interest, locations)
+    			.then(function(data) {
+    				railService.getData(data);
+    				$location.path('/map');
+    			});
+    	}
+
+    	$scope.shopClick = function() {
+    		var interest = 'shopping';
+    		railService.getYelps(interest, locations)
+    			.then(function(data) {
+    				railService.getData(data);
+    				$location.path('/map');
+    			});
+    	}
 
 	});
 
