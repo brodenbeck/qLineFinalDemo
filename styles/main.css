@@ -1,5 +1,11 @@
 .heading {
 	display: inline-block;
+	font-size: 1.75em; 
+	padding: 0 0 0 10px
+}
+
+header {
+	margin: 10px 0 0 10px;
 }
 
 footer {
@@ -22,11 +28,20 @@ img {
 
 body {
 	font-family: 'Arvo', serif;
+	color: #626A70;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.intro {
+	font-size: 2.5em;
 }
 
 .map-div {
@@ -36,24 +51,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .int-div {
 	position: relative;
-	top: 20px;
+	top: 10px;
 	left: 15%;
 	width: 70%;
 }
 
 .int-button {
 	background-color: #004D59;
-	border-radius: 1px;
+	border-radius: 5px;
 	outline: none;
 	border: 0;
 	color: #D5D4CD;
 	font-family: 'Quicksand', sans-serif;
-	width: 49%;
+	font-size: 1.25em;
+	width: 48%;
 	padding: 10px;
-	margin: 5px;
+	margin: 10px 7px;
+}
+
+.int-button:hover {
+	background-color: #D3794F;
+	cursor: pointer; 
 }
 
 i {
 	color: #D5D4CD;
 	padding: 5%;
+}
+
+.int-btn-txt {
+
 }
