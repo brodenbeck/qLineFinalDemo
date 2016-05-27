@@ -9,11 +9,11 @@ angular.module('mapModule')
 			} else {
 				return true;
 			}
-		}
+		};
 
 		$scope.remove = function(item) {
 			var index = $scope.itinerary.indexOf(item);
 			$scope.itinerary.splice(index, 1);
-		}
+		};
 
 	});

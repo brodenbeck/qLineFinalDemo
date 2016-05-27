@@ -1,13 +1,15 @@
 <!-- home page for selecting user interest -->
 <div id= "categories">
-  <fieldset>
-        What are you interested in?
-      <br>
-    <select 
-      ng-options="p.name for p in interests"
-      ng-model="selected"
-      ng-change="hasChanged()">
-    </select>
-  </fieldset>
-  <div ng-if="error_index === $index" ng-repeat="error in errors">{{error.message}}</div>
+    <fieldset> What are you interested in?
+        <br>
+        <div id='soflow'>
+            <select
+              ng-options="p.name for p in interests"
+              ng-model="selected"
+              ng-change="hasChanged()">
+            </select>
+        </div>
+    </fieldset>
+    
+    <div ng-if="error_index === $index" ng-repeat="error in errors">{{error.message}}</div>
 </div>

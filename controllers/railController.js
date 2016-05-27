@@ -1,6 +1,6 @@
 angular.module('mapModule')
 
-	.controller('railController', function($scope, $compile, railService){		
+	.controller('railController', function($scope, railService){		
 
         $scope.stops = {
             congress: {
@@ -10,7 +10,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Congress Station'
             },
             campusMartius: {
                 displayData: railService.displayData(1),
@@ -19,7 +20,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Campus Martius Station'
             },
             grandCircus: {
                 displayData: railService.displayData(2),
@@ -28,7 +30,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Grand Circus Station'
             },
             foxtown: {
                 displayData: railService.displayData(3),
@@ -37,7 +40,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Foxtown Station'
             },
             sibley: {
                 displayData: railService.displayData(4),
@@ -46,7 +50,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Sibley Station'
             },
             mlk: {
                 displayData: railService.displayData(5),
@@ -55,7 +60,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Martin Luther King, Jr. Station'
             },
             canfield: {
                 displayData: railService.displayData(6),
@@ -64,7 +70,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Canfield Station'
             },
             warren: {
                 displayData: railService.displayData(7),
@@ -73,7 +80,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Warren Station'
             },
             ferry: {
                 displayData: railService.displayData(8),
@@ -82,7 +90,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Ferry Station'
             },
             amsterdam: {
                 displayData: railService.displayData(9),
@@ -91,7 +100,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Amsterdam Station'
             },
             amtrak: {
                 displayData: railService.displayData(10),
@@ -100,7 +110,8 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Amtrak Station'
             },
             grand: {
                 displayData: railService.displayData(11),
@@ -109,13 +120,10 @@ angular.module('mapModule')
                 back: back,
                 show: show,
                 showIndexing: showIndexing,
-                itin: itin
+                itin: itin,
+                station: 'Grand Station'
             }
-        }
-
-        function showIndexing(stop) {
-            return (stop.placeIndex + 1) + ' / ' + stop.displayData.length;
-        }
+        };
 
         function next(stop) {
             if(stop.placeIndex >= stop.displayData.length -1) {
@@ -139,6 +147,10 @@ angular.module('mapModule')
             } else {
                 return true;
             }
+        }
+
+        function showIndexing(stop) {
+            return (stop.placeIndex + 1) + ' / ' + stop.displayData.length;
         }
 
         function itin(stop) {
