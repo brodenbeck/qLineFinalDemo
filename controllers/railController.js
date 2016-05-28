@@ -159,3 +159,6 @@ angular.module('mapModule')
         }
 
     });
+
+
+   
