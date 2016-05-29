@@ -1,6 +1,6 @@
 angular.module('mapModule')
+    .controller('railController', function($scope, railService){        
 
-	.controller('railController', function($scope, railService){		
 
         $scope.stops = {
             congress: {
@@ -12,6 +12,7 @@ angular.module('mapModule')
                 showIndexing: showIndexing,
                 itin: itin,
                 station: 'Congress Station'
+               
             },
             campusMartius: {
                 displayData: railService.displayData(1),
@@ -22,6 +23,7 @@ angular.module('mapModule')
                 showIndexing: showIndexing,
                 itin: itin,
                 station: 'Campus Martius Station'
+               
             },
             grandCircus: {
                 displayData: railService.displayData(2),
@@ -125,6 +127,7 @@ angular.module('mapModule')
             }
         };
 
+
         function next(stop) {
             if(stop.placeIndex >= stop.displayData.length -1) {
                 stop.placeIndex = 0;
@@ -146,16 +149,17 @@ angular.module('mapModule')
                 return false;
             } else {
                 return true;
-            }
+            } 
         }
-
+       
         function showIndexing(stop) {
             return (stop.placeIndex + 1) + ' / ' + stop.displayData.length;
-        }
+        }   
 
         function itin(stop) {
             var stuffToDo = stop.displayData[stop.placeIndex];
             railService.saveItin(stuffToDo);
+            console.log(stuffToDo);
         }
 
     });

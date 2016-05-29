@@ -72,6 +72,7 @@ angular.module('mapModule')
 
 	    function saveItin(stuffToDo) {
 	    	itinerary.push(stuffToDo);
+	    	
 	    }
 
 	    function getItin() {

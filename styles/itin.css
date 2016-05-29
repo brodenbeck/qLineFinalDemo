@@ -1,0 +1,10 @@
+.blue{
+	background-color: rgba(0, 128, 140, 0.3);
+}
+
+.itinlist{
+	margin:auto;
+	padding: 25px 50px;
+	border: solid 1px rgb(0, 128, 140);
+	max-width: 50%;
+}

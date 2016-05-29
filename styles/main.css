@@ -8,9 +8,10 @@ header {
 	margin: 10px 0 0 10px;
 }
 
-footer {
-	position: fixed;
-	bottom: 0px;
+.footer {
+	margin: auto 0;
+	padding-top: 15px;
+	display: inline;
 }
 
 #categories {
@@ -80,5 +81,8 @@ i {
 
 }
 
+ng-view {
+	height: 2000px;
+}
 
 
