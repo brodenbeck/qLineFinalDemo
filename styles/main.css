@@ -77,12 +77,19 @@ i {
 	padding: 5%;
 }
 
-.int-btn-txt {
-
-}
-
 ng-view {
 	height: 2000px;
 }
 
+@media(max-width: 1160px) {
+	.int-button {
+		width: 100%;
+	}
+}
 
+@media(max-width: 600px) {
+	.int-div {
+		left: 5%;
+		width: 90%;
+	}
+}
