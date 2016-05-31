@@ -17,7 +17,6 @@
 	text-align: center;
 }
 
-
 .mini {
 	background-color: #46afb9;
 	width: 100px;
@@ -82,6 +81,10 @@
 	padding: 5px;
 }
 
+.phone-link {
+	color: #626A70;
+}
+
 @media(min-width: 1300px) {
 	.map-div {
 		width: 50%;
@@ -90,5 +93,11 @@
 
 	.addbutton {
 		font-size: 0.75em;
+	}
+}
+
+@media(max-width: 500px) {
+	.phone-link {
+		color: #004D59;
 	}
 }

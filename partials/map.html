@@ -4,7 +4,7 @@
 		<div ng-repeat='place in stops.grand.displayData track by $index' ng-if='stops.grand.placeIndex === $index'>
 			<h2>{{stops.grand.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.grand.itin(stops.grand)'> add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -19,7 +19,7 @@
 		<div ng-repeat='place in stops.amtrak.displayData track by $index' ng-if='stops.amtrak.placeIndex === $index'>
 			<h2>{{stops.amtrak.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.amtrak.itin(stops.amtrak)'> add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -34,7 +34,7 @@
 		<div ng-repeat='place in stops.amsterdam.displayData track by $index' ng-if='stops.amsterdam.placeIndex === $index'>
 			<h2>{{stops.amsterdam.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.amsterdam.itin(stops.amsterdam)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -49,7 +49,7 @@
 		<div ng-repeat='place in stops.ferry.displayData track by $index' ng-if='stops.ferry.placeIndex === $index'>
 			<h2>{{stops.ferry.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.ferry.itin(stops.ferry)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -64,7 +64,7 @@
 		<div ng-repeat='place in stops.warren.displayData track by $index' ng-if='stops.warren.placeIndex === $index'>
 			<h2>{{stops.warren.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.warren.itin(stops.warren)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -79,7 +79,7 @@
 		<div ng-repeat='place in stops.canfield.displayData track by $index' ng-if='stops.canfield.placeIndex === $index'>
 			<h2>{{stops.canfield.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.canfield.itin(stops.canfield)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -94,7 +94,7 @@
 		<div ng-repeat='place in stops.mlk.displayData track by $index' ng-if='stops.mlk.placeIndex === $index'>
 			<h2>{{stops.mlk.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.mlk.itin(stops.mlk)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -109,7 +109,7 @@
 		<div ng-repeat='place in stops.sibley.displayData track by $index' ng-if='stops.sibley.placeIndex === $index'>
 			<h2>{{stops.sibley.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.sibley.itin(stops.sibley)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -124,7 +124,7 @@
 		<div ng-repeat='place in stops.foxtown.displayData track by $index' ng-if='stops.foxtown.placeIndex === $index'>
 			<h2>{{stops.foxtown.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.foxtown.itin(stops.foxtown)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -139,7 +139,7 @@
 		<div ng-repeat='place in stops.grandCircus.displayData track by $index' ng-if='stops.grandCircus.placeIndex === $index'>
 			<h2>{{stops.grandCircus.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.grandCircus.itin(stops.grandCircus)'> add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -154,7 +154,7 @@
 		<div ng-repeat='place in stops.campusMartius.displayData track by $index' ng-if='stops.campusMartius.placeIndex === $index'>
 			<h2>{{stops.campusMartius.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.campusMartius.itin(stops.campusMartius)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
@@ -169,7 +169,7 @@
 		<div ng-repeat='place in stops.congress.displayData track by $index' ng-if="stops.congress.placeIndex === $index">
 			<h2>{{stops.congress.station}}</h2>
 			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-			<p>{{ place.phone }}</p>
+			<a class="phone-link" href="tel:{{ place.phone }}"><p>{{ place.phone }}</p></a>
 			<p>{{ place.address }}</p>
 			<div><button class="addbutton" ng-click='showme=true; stops.congress.itin(stops.congress)'>add to itinerary</button></div>
 			<p id= "addtoitin" ng-show = "showme">added</p>
