@@ -30,6 +30,7 @@ body {
 	font-family: 'Arvo', serif;
 	color: #626A70;
 	margin-bottom: 50px;
+	background-image: url(../images/crossword.png);
 }
 
 h1, h2, h3, h4, h5, h6 {
