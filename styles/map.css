@@ -31,9 +31,12 @@
 }
 
 .addbutton {
-	position: relative;
-	top: 80%;
-	left:20%;
+	background-color: #D3794F;
+	padding: 5px;
+	color: #D5D4CD;
+	outline: none;
+	border-radius: 5px;
+	border: 0;
 }
 
 .hide {
