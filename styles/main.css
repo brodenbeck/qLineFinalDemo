@@ -13,6 +13,7 @@ ul {
 	list-style-type: none;
 	width: 450px;
 	margin: auto;
+	padding: 0;
 }
 
 li {
