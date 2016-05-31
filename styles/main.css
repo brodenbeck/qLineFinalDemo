@@ -1,17 +1,25 @@
 .heading {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+footer {
+	margin-top: 50px;
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	width: 450px;
+	margin: auto;
+}
+
+li {
 	display: inline-block;
-	font-size: 1.75em; 
-	padding: 0 0 0 10px
-}
-
-header {
-	margin: 10px 0 0 10px;
-}
-
-.footer {
-	margin: auto 0;
-	padding-top: 15px;
-	display: inline;
+	width: 140px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
 }
 
 #categories {
@@ -23,7 +31,7 @@ fieldset {
 }
 
 img {
-	max-width: 90%;
+	max-width: 100%;
 }
 
 body {
@@ -95,7 +103,7 @@ ng-view {
 }
 
 a {
-	color: #626A70;
+	color: #46AFB9;
 	text-decoration: none;
 }
 
