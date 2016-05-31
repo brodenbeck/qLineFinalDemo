@@ -24,19 +24,18 @@
 
 	<body ng-app="mapModule">
 		<header>
-			<img src="http://placekitten.com/200/200">
-			<div class="heading">	
-				<h1>QtoDO</h1>
-				<h2>Fun on the M1</h2>
-			</div><!-- ends headings div -->
+			<img class="heading" src="images/header.png">
 		</header>
 
 		<ng-view></ng-view>
 
-		<footer class="footer">
-			<a href='/#/itinerary'>Itinerary</a>
-			<a href='/#/'>Home</a>
-			<a href="/#/contact">Contact Us</a>
+		<footer>
+			<ul>
+				<li><a href='/#/'>Home</a></li>
+				<li><a href='/#/itinerary'>Itinerary</a></li>
+				<li><a href="/#/contact">Contact Us</a></li>
+			</ul>
 		</footer>
+
 	</body>
 </html>
