@@ -1,4 +1,4 @@
-angular.module('mapModule', ['ngRoute'])
+angular.module('mapModule', ['ngRoute', 'angular-sortable-view'])
 	.config(function($routeProvider){
 		$routeProvider
 			.when('/', 
