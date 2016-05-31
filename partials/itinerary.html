@@ -1,10 +1,12 @@
 <p id="empty" class=" text-center" ng-show='empty()'>There's nothing in your itinerary.</p>
-<div class="itinlist" ng-show='!empty()' ng-repeat='place in itinerary track by $index' ng-class="{'blue':$even}">
-	<div>
-		<p>{{place.station}}</p>
-		<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-		<p>{{ place.phone }}</p>
-		<p>{{ place.address }}</p>
-		<button class="remove-btn" ng-click='remove(place)'>Remove</button>
-	<div>	
+<div ng-show='!empty()' sv-root class="sortablecontain" sv-part="itinerary"> 
+	<div class="itinlist" ng-repeat="place in itinerary track by $index" ng-class="{'blue':$even, 'white': $odd}" sv-element>
+		<div>
+			<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
+			<p>{{place.station}}</p>
+			<p>{{ place.phone }}</p>
+			<p>{{ place.address }}</p>
+			<button class="remove-btn" ng-click='remove(place)'>Remove</button>
+		</div>	
+	</div>
 </div>

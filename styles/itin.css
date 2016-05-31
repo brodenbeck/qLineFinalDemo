@@ -1,13 +1,36 @@
-.blue{
-	background-color: rgba(0, 128, 140, 0.3);
+.blue {
+	background-color: rgba(144, 207, 213, 0.9);
+}
+
+.white{
+	background-color: rgb(242, 242, 242);
+	
+}
+a {
+	color: rgb(40, 130, 138);
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+a:visited {
+	color: rgb(40, 130, 138);
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.sortablecontain{
+	border: 1px solid rgb(0, 128, 140);
+	max-width: 50%;
+	margin:auto;
+	border-radius: 15px;
 }
 
 .itinlist{
-	margin:auto;
 	padding: 25px 50px;
 	border: solid 1px rgb(0, 128, 140);
-	max-width: 50%;
+	max-width: 100%;
 	text-align: center;
+	border-radius: 15px;
 }
 
 .remove-btn {
