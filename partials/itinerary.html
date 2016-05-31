@@ -1,4 +1,8 @@
-<p id="empty" class=" text-center" ng-show='empty()'>There's nothing in your itinerary.</p>
+<div id='empty' ng-show='empty()' class="map-div">
+	<h2 class="text-center">Oh no! There's nothing in your itinerary!</h2>
+	<p>To add locations to your itinerary, return <a href="/#/">home</a>, select an interest, and add locations using the 'add to itinerary' button under your desired location(s).</p>
+</div>
+
 <div class="itinlist" ng-show='!empty()' ng-repeat='place in itinerary track by $index' ng-class="{'blue':$even}">
 	<div>
 		<p>{{place.station}}</p>
