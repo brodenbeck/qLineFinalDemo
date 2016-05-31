@@ -3,17 +3,20 @@
 <div ng-show="stops.grand.show(stops.grand)" class="map-divl">
 	<div ng-repeat='place in stops.grand.displayData track by $index' ng-if='stops.grand.placeIndex === $index'>
 		<h2>{{stops.grand.station}}</h2>
-		<p>{{stops.grand.showIndexing(stops.grand)}}</p>	
-		<button ng-click='stops.grand.back(stops.grand)'><i class="fa fa-arrow-left fa-1x" id="itnbutton" aria-hidden="true"></i></button>
-		<button ng-click='stops.grand.next(stops.grand)'> <i class="fa fa-arrow-right fa-1x" id="itnbutton" aria-hidden="true"></i></button>
-		<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
-		<p>{{ place.phone }}</p>
-		<p>{{ place.address }}</p>
 		<div><button ng-click='showme=true; stops.grand.itin(stops.grand)'> <i class="fa fa-check-square-o fa-1x" id="itnbutton" aria-hidden="true"></i></button>
 		<span id="addtoitin">   add to itinerary</span>
 		<p id= "addtoitin" ng-show = "showme">added</p></div>
+		<a href="{{ place.url }}" target="_blank"><h3>{{ place.name }}</h3></a>
+		<p>{{ place.phone }}</p>
+		<p>{{ place.address }}</p>
+		<div class="stop-nav">
+			<button ng-click='stops.grand.back(stops.grand)'><i class="fa fa-arrow-left fa-1x" id="itnbutton" aria-hidden="true"></i></button>
+			<p class="stop-nav">{{stops.grand.showIndexing(stops.grand)}}</p>	
+			<button ng-click='stops.grand.next(stops.grand)'> <i class="fa fa-arrow-right fa-1x" id="itnbutton" aria-hidden="true"></i></button>
+		</div>
 	</div>
 </div>
+
 <div class="mini">Amtrak Station</div>
 <div ng-show="stops.amtrak.show(stops.amtrak)" class="map-divr">
 	<div ng-repeat='place in stops.amtrak.displayData track by $index' ng-if='stops.amtrak.placeIndex === $index'>

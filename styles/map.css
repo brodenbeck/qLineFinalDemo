@@ -86,7 +86,8 @@
 	margin-bottom: 0px;
 }
 
-.toggle {
-
+.stop-nav {
+	display: inline-block;
+	padding: 5px;
 }
 
