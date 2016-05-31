@@ -16,7 +16,6 @@ header {
 
 #categories {
 	display: inline-block;
-
 }
 
 fieldset {
@@ -92,4 +91,18 @@ ng-view {
 		left: 5%;
 		width: 90%;
 	}
+}
+
+a {
+	color: #626A70;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #626A70;
+}
+
+a:hover {
+	color: #D3794F;
+	text-decoration: underline;
 }

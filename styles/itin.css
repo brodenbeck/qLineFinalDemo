@@ -7,4 +7,18 @@
 	padding: 25px 50px;
 	border: solid 1px rgb(0, 128, 140);
 	max-width: 50%;
+	text-align: center;
+	color: 
 }
+
+.remove-btn {
+	background-color: #D3794F;
+	padding: 5px;
+	color: #D5D4CD;
+	position: relative;
+	left: 50%;
+	outline: none;
+	border-radius: 5px;
+	border: 0;
+}
+
