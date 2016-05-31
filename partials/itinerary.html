@@ -1,4 +1,4 @@
-<p id="empty" ng-show='empty()'>There's nothing in your itinerary.</p>
+<p id="empty" class=" text-center" ng-show='empty()'>There's nothing in your itinerary.</p>
 <div class="itinlist" ng-show='!empty()' ng-repeat='place in itinerary track by $index' ng-class="{'blue':$even}">
 	<div>
 		<p>{{place.station}}</p>
