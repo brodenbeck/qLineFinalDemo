@@ -23,3 +23,15 @@
 		left: 5%;
 	}
 }
+
+@media(min-width: 1300px) {
+	.our-photo {
+		display: block;
+		max-height: 700px;
+		margin: auto;
+	}
+
+	.contact-icons {
+		font-size: 4em;
+	}
+}

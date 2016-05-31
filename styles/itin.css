@@ -27,3 +27,12 @@
 
 }
 
+@media(min-width: 1300px) {
+	.remove-btn {
+		font-size: 0.75em;
+	}
+
+	.itinlist {
+		font-size: 1.5em;
+	}
+}

@@ -28,6 +28,7 @@
 	border-radius: 5px;
 	padding: 3px;
 	box-shadow: inset 0 0 2px rgba(68,68,68,0.4);
+	color: #D5D4CD;
 }
 
 .addbutton {
@@ -80,4 +81,15 @@
 .stop-nav {
 	display: inline-block;
 	padding: 5px;
+}
+
+@media(min-width: 1300px) {
+	.map-div {
+		width: 50%;
+		font-size: 1.5em;
+	}
+
+	.addbutton {
+		font-size: 0.75em;
+	}
 }

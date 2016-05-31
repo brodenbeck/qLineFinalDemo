@@ -18,7 +18,7 @@ angular.module('mapModule')
 
     	$scope.artsClick = function() {
     		var interest = 'arts';
-    		railService.getYelps(interest, locations)
+    		railService.getYelps(interest, locations) 
     			.then(function(data) {
     				railService.getData(data);
     				$location.path('/map');
