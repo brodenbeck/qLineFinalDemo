@@ -23,7 +23,7 @@ angular.module('mapModule')
     				railService.getData(data);
     				$location.path('/map');
     			});
-    	}
+    	};
 
     	$scope.beerClick = function() {
     		var interest = 'bars';
@@ -32,7 +32,7 @@ angular.module('mapModule')
     				railService.getData(data);
     				$location.path('/map');
     			});
-    	}
+    	};
 
     	$scope.coffeeClick = function() {
     		var interest = 'coffee';
@@ -41,7 +41,7 @@ angular.module('mapModule')
     				railService.getData(data);
     				$location.path('/map');
     			});
-    	}
+    	};
 
     	$scope.shopClick = function() {
     		var interest = 'shopping';
@@ -50,7 +50,7 @@ angular.module('mapModule')
     				railService.getData(data);
     				$location.path('/map');
     			});
-    	}
+    	};
 
 	});
 

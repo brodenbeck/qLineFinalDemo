@@ -4,8 +4,14 @@
 	text-align: center;
 }
 
+#navtop {
+	margin-top: 10px;
+	margin-bottom: 35px;
+
+}
+
 nav {
-	margin-top: 50px;
+	margin-top: 75px;
 	width: 100%;
 }
 
@@ -13,11 +19,7 @@ ul {
 	list-style-type: none;
 	width: 450px;
 	margin: auto;
-<<<<<<< HEAD
-	padding:0;
-=======
 	padding: 0;
->>>>>>> 7634f069bdeaac54edefeb6f24373bf0cd55e921
 }
 
 li {
