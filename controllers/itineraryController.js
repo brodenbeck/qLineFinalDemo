@@ -2,13 +2,13 @@ angular.module('mapModule')
 	.controller('itineraryController', function($scope, railService) {
 
 		$scope.itinerary = railService.getItin();
-		console.log($scope.itinerary);
 
-		$scope.show = function() {
+			console.log($scope.itinerary.length === 0);
+		$scope.empty = function() {
 			if($scope.itinerary.length === 0) {
-				return false;
-			} else {
 				return true;
+			} else {
+				return false;
 			}
 		};
 

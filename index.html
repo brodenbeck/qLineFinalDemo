@@ -24,18 +24,25 @@
 
 	<body ng-app="mapModule">
 		<header>
-			<img class="heading" src="images/header.png">
+			<a href="/#/"><img class="heading" src="images/header.png"></a>
 		</header>
-
-		<ng-view></ng-view>
-
-		<footer>
+		<nav>
 			<ul>
 				<li><a href='/#/'>Home</a></li>
 				<li><a href='/#/itinerary'>Itinerary</a></li>
 				<li><a href="/#/contact">Contact Us</a></li>
 			</ul>
-		</footer>
+		</nav>
+
+		<ng-view></ng-view>
+
+		<nav>
+			<ul>
+				<li><a href='/#/'>Home</a></li>
+				<li><a href='/#/itinerary'>Itinerary</a></li>
+				<li><a href="/#/contact">Contact Us</a></li>
+			</ul>
+		</nav>
 
 	</body>
 </html>
