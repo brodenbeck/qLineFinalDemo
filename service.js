@@ -70,8 +70,10 @@ angular.module('mapModule')
 	    	return globalStation[elementIndex];
 	    }
 
-	    function saveItin(stuffToDo) {
+	    function saveItin(stuffToDo, station) {
+	    	stuffToDo.station = station;
 	    	itinerary.push(stuffToDo);
+	    	console.log(stuffToDo);
 	    	
 	    }
 

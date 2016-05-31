@@ -158,8 +158,7 @@ angular.module('mapModule')
 
         function itin(stop) {
             var stuffToDo = stop.displayData[stop.placeIndex];
-            railService.saveItin(stuffToDo);
-            console.log(stuffToDo);
+            railService.saveItin(stuffToDo, stop.station);
         }
 
     });

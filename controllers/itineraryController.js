@@ -2,6 +2,7 @@ angular.module('mapModule')
 	.controller('itineraryController', function($scope, railService) {
 
 		$scope.itinerary = railService.getItin();
+		console.log($scope.itinerary);
 
 		$scope.show = function() {
 			if($scope.itinerary.length === 0) {
