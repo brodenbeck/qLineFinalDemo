@@ -11,8 +11,19 @@
 @media(max-width: 1205px) {
 	.half-width {
 		margin: 5px;
-		width: 48%;
+		max-width: 48%;
 	}
+}
+
+@media(max-width: 1302px){
+	.half-width {
+		margin: auto;
+		display: inline;
+		max-width: 48%;
+		
+		
+	}
+
 }
 
 @media(max-width: 620px) {
@@ -27,7 +38,7 @@
 @media(min-width: 1080px) {
 	.our-photo {
 		display: block;
-		max-height: 700px;
+		max-width: 48%;
 		margin: auto;
 	}
 }
