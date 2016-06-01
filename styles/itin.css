@@ -1,5 +1,6 @@
 .blue {
 	background-color: rgba(144, 207, 213, 0.9);
+
 }
 
 .white{
@@ -47,9 +48,24 @@
 	padding-bottom: 120px;
 }
 
-@media(min-width: 1300px) {
+#itinlink {
+	color: rgb(13, 106, 115);
+	font-size: 1.25em;
+}
+
+
+@media(min-width: 1080px) {
+	body {
+		font-size: 1.5em;
+	}
+	#itintext {
+		font-size: 1.5em;
+	}
+
 	.remove-btn {
 		font-size: 0.75em;
+		left: 45%;
+		padding: 10px;
 	}
 
 	.itinlist {
@@ -58,6 +74,9 @@
 }
 
 @media(max-width: 600px) {
+	.sortablecontain{
+		max-width: 75%;
+	}
 	.itin-div {
 		width: 100%;
 		left: 0;
