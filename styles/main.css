@@ -112,6 +112,12 @@ ng-view {
 	}
 }
 
+@media(max-width: 500px) {
+	ul {
+		width: 300px;
+	}
+}
+
 a {
 	color: #46AFB9;
 	text-decoration: none;

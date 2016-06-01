@@ -39,6 +39,14 @@
 
 }
 
+.itin-div {
+	position: relative;
+	width: 50%;
+	left: 25%;
+	top: 70px;
+	padding-bottom: 120px;
+}
+
 @media(min-width: 1300px) {
 	.remove-btn {
 		font-size: 0.75em;
@@ -46,5 +54,12 @@
 
 	.itinlist {
 		font-size: 1.5em;
+	}
+}
+
+@media(max-width: 600px) {
+	.itin-div {
+		width: 100%;
+		left: 0;
 	}
 }
