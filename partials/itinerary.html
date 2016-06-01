@@ -3,7 +3,7 @@
 	<p>To add locations to your itinerary, return <a href="/#/">home</a>, select an interest, and add locations using the 'add to itinerary' button under your desired location(s).</p>
 </div>
 
-<p ng-show='!empty()'>Below you can find the list of items added to your itinerary. Drag and drop the items to the order in which you want to experience Detroit!</p>
+<p ng-show='!empty()' class="itin-div">Below you can find the list of items added to your itinerary. Drag and drop the items to the order in which you want to experience Detroit!</p>
 <div ng-show='!empty()' sv-root class="sortablecontain" sv-part="itinerary"> 
 	<div class="itinlist" ng-repeat="place in itinerary track by $index" ng-class="{'blue':$even, 'white': $odd}" sv-element>
 		<div>
