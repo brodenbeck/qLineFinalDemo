@@ -121,7 +121,7 @@ ng-view {
 	height: 2000px;
 }
 
-@media(max-width: 1160px) {
+@media(max-width: 1223px) {
 	.int-button {
 		width: 100%;
 	}

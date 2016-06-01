@@ -23,6 +23,17 @@
 	border-radius: 15px;
 }
 
+#handle{
+	border: 1px solid rgb(0, 128, 140);
+	border-radius: 5px;
+	width: 50%;
+	margin: auto;
+	padding: 4px;
+	background-color: rgb(0, 128, 140);
+	color: rgb(231, 231, 228);
+	cursor: pointer;
+}
+
 .remove-btn {
 	background-color: #D3794F;
 	padding: 5px;

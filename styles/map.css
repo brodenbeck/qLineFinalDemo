@@ -5,7 +5,7 @@
 .map-div {
 	background-color:  #D5D4CD;
 	min-width: 285px;
-	width: 30%;
+	width: 50%;
 	margin: auto;
 	padding: 10px;
 	margin-top: -70px;
@@ -70,7 +70,12 @@
 	margin-bottom: 0px;
 }
 
-
+.stationtitle {
+	padding-bottom: 25px;
+	border-bottom: 2px solid rgb(174, 172, 158);
+	width: 90%;
+	margin: auto;
+}
 
 #itnbutton {
 	border-radius: 75%;
@@ -100,7 +105,7 @@
 	.map-div {
 		width: 50%;
 		font-size: 1.5em;
-		margin-top: -3.4%;
+		margin-top: -50;
 		margin-bottom: 3%;
 	}
 
@@ -128,8 +133,14 @@
 	}
 }
 
-@media(max-width: 500px) {
+@media(max-width: 1079px) {
 	.phone-link {
 		color: #004D59;
 	}
+	.map-div {
+		margin-top: -45px;
+		margin-bottom: 30px;
+	}
+
 }
+
