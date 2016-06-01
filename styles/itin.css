@@ -32,9 +32,13 @@
 	padding: 4px;
 	background-color: rgb(0, 128, 140);
 	color: rgb(231, 231, 228);
-	cursor: pointer;
+	cursor: -webkit-grab;
 	opacity: 0.5;
 	font-size: 0.75em;
+}
+
+#handle:active {
+	cursor: -webkit-grabbing;
 }
 
 .remove-btn {
