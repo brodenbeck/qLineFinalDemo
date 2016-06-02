@@ -92,6 +92,7 @@
 	margin-bottom: 0px;
 }
 
+
 .stop-nav {
 	display: inline-block;
 	padding: 5px;
@@ -144,3 +145,35 @@
 
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.map-div{
+  	width: 95%;
+  	margin-top: -70px;
+  	}
+  	#itnbutton {
+	border-radius: 75%;
+	font-size: 1.75em;
+	background-color: #626A70;
+	box-shadow: none;
+	border: none;
+	}
+	.addbutton {
+	padding: 7px;
+	font-size: 1.5em;
+	}
+
+	.stop-nav {
+	display: inline-block;
+	padding: 5px;
+	font-size: 1.5em;
+	}
+	.mini {
+	width: 150px;
+	padding: 3px;
+	font-size: 1.5em;
+	}	
+
+}
