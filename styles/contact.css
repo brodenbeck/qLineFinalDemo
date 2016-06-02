@@ -4,8 +4,8 @@
 	display: inline-block;
 }
 
-.contact-icons {
-	color: #626A70;
+.contact-icons:hover {
+	color: #D3794F;
 }
 
 @media(max-width: 1205px) {
